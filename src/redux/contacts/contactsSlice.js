@@ -1,6 +1,6 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { fetchContacts, deleteContact, addContact } from "./contactsOps";
-import { selectNameFilter } from './filtersSlice';
+import { selectNameFilter } from '../filters/filtersSlice';
 
 const slice = createSlice({
   name: "items",

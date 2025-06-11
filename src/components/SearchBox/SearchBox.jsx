@@ -2,7 +2,7 @@ import { useId } from "react";
 import css from "./SearchBox.module.css";
 import { useDebouncedCallback } from "use-debounce";
 import { useDispatch, useSelector } from "react-redux";
-import { changeFilter, selectNameFilter } from "../../redux/filtersSlice";
+import { changeFilter, selectNameFilter } from "../../redux/filters/filtersSlice";
 
 export default function SearchBox() {
   const inputId = useId();

@@ -1,0 +1,16 @@
+.container {
+display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 800;
+}

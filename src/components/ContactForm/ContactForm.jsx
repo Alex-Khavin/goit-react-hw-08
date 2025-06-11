@@ -5,7 +5,7 @@ import "yup-phone-lite";
 import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contacts/contactsOps";
 
 const FeedbackSchema = Yup.object().shape({
   name: Yup.string()
