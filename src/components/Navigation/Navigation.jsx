@@ -21,20 +21,6 @@ export default function Navigation() {
           Contacts
         </NavLink>
       )}
-
-      {/* <NavLink to="/register" className={isActiveClass}>Register</NavLink>
-                    <NavLink to="/login" className={isActiveClass}>Log In</NavLink> */}
     </nav>
-    // <div>
-    //     <header className={css.header}>
-    //         <nav className={css.nav}>
-    //             <NavLink to="/" className={isActiveClass}>Home</NavLink>
-    //             <NavLink to="/contacts" className={isActiveClass}>Contacts</NavLink>
-    //             {/* <NavLink to="/register" className={isActiveClass}>Register</NavLink>
-    //             <NavLink to="/login" className={isActiveClass}>Log In</NavLink> */}
-    //         </nav>
-    //     </header>
-    //     <hr/>
-    // </div>
   );
 }

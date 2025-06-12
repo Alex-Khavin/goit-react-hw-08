@@ -2,7 +2,8 @@ import { useId } from "react";
 import css from "./SearchBox.module.css";
 import { useDebouncedCallback } from "use-debounce";
 import { useDispatch, useSelector } from "react-redux";
-import { changeFilter, selectNameFilter } from "../../redux/filters/filtersSlice";
+import { changeFilter } from "../../redux/filters/slice";
+import { selectNameFilter } from "../../redux/filters/selectors";
 
 export default function SearchBox() {
   const inputId = useId();
@@ -14,9 +15,6 @@ export default function SearchBox() {
     500
   );
 
-  // const handleChange = (event) => {
-  //   dispatch(changeFilter(event.target.value));
-  // };
   return (
     <div className={css.container}>
       <label id={inputId}>Find contacts by name</label>
@@ -25,8 +23,6 @@ export default function SearchBox() {
         type="text"
         defaultValue={filter}
         onChange={(e) => debounced(e.target.value)}
-        // value={filter}
-        // onChange={handleChange}
         name="search"
         id={inputId}
       />
