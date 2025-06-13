@@ -10,7 +10,6 @@ export default function RegistrationForm() {
 
   const handleSubmit = (values, actions) => {
     dispath(registerUser(values));
-    console.log("RF:", values);
     actions.resetForm();
   };
 
